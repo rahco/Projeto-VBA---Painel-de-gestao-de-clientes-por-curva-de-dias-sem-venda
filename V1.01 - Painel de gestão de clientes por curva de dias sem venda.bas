@@ -169,9 +169,9 @@ Sub Base_geral()
 
     Sheets("BASE TRATADA (2)").Select
     Range("DR4").Select
-    ActiveSheet.Range("$B$4:$DR$100000").AutoFilter Field:=121, Criteria1:="=1", _
+    ActiveSheet.Range("$B$4:$DS$100000").AutoFilter Field:=122, Criteria1:="=1", _
         Operator:=xlAnd
-    Range("CX5:DQ5").Select
+    Range("CY5:DR5").Select
     Range(Selection, Selection.End(xlDown)).Select
     Selection.Copy
     Sheets("BASE GERAL").Select
@@ -181,8 +181,8 @@ Sub Base_geral()
     Range("B4").Select
     Application.CutCopyMode = False
     Sheets("BASE TRATADA (2)").Select
-    Range("DR4").Select
-    ActiveSheet.Range("$B$4:$DR$100000").AutoFilter Field:=121
+    Range("DS4").Select
+    ActiveSheet.Range("$B$4:$DS$100000").AutoFilter Field:=122
     Range("B5").Select
     Sheets("BASE GERAL").Select
     Range("B4").Select
